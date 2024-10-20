@@ -9,9 +9,9 @@ const server: FastifyInstance = Fastify({ logger: true });
 
 // Initialize AI assistant
 const ai = new Chat({
-  url: config.openai.url,
-  apiKey: config.openai.apiKey,
-  model: config.openai.model,
+  url: config.openai.chatUrl,
+  apiKey: config.openai.chatApiKey,
+  model: config.openai.chatModel,
   // Optional
   role: 'AI assistant recommending food',
   memory: 5,
